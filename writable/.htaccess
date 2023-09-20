@@ -1,0 +1,3 @@
+<IfModule mod_rewrite.c>
+    Header set Acces-Control-Allow-Origin "*"
+</IfModule>

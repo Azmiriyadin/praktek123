@@ -1,0 +1,111 @@
+CRITICAL - 2022-07-07 09:20:26 --> Undefined variable $dtpenerbit
+#0 C:\xampp\htdocs\uas1\app\Views\beranda.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\uas1\app\Views\home.php(76): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\uas1\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\uas1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\uas1\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(12): view('home', Array)
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->index()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-07-07 10:37:39 --> Undefined variable $dtpenerbit
+#0 C:\xampp\htdocs\uas1\app\Views\beranda.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91)
+#1 C:\xampp\htdocs\uas1\app\Views\home.php(76): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\uas1\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\uas1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\uas1\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(12): view('home', Array)
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->index()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-07-07 11:15:41 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: pengarang in C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php:116
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 116)
+#1 C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php(116): SQLite3->query('SELECT * FROM p...')
+#2 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM p...')
+#3 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#4 C:\xampp\htdocs\uas1\app\Models\Mdata.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(17): App\Models\Mdata->getPengarang()
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->data()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-07-07 11:15:41 --> SQLite3::query(): Unable to prepare statement: 1, no such table: pengarang
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 116)
+#1 C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php(116): SQLite3->query('SELECT * FROM p...')
+#2 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM p...')
+#3 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#4 C:\xampp\htdocs\uas1\app\Models\Mdata.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(17): App\Models\Mdata->getPengarang()
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->data()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-07-07 11:15:46 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: buku in C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php:116
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 116)
+#1 C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php(116): SQLite3->query('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLite3\Connection->execute('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\uas1\app\Models\Mdata.php(25): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(8): App\Models\Mdata->getTotalBuku()
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->index()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-07-07 11:15:46 --> SQLite3::query(): Unable to prepare statement: 1, no such table: buku
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 116)
+#1 C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php(116): SQLite3->query('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLite3\Connection->execute('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\uas1\app\Models\Mdata.php(25): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(8): App\Models\Mdata->getTotalBuku()
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->index()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-07-07 11:15:48 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: buku in C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php:116
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 116)
+#1 C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php(116): SQLite3->query('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLite3\Connection->execute('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\uas1\app\Models\Mdata.php(25): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(8): App\Models\Mdata->getTotalBuku()
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->index()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-07-07 11:15:48 --> SQLite3::query(): Unable to prepare statement: 1, no such table: buku
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 116)
+#1 C:\xampp\htdocs\uas1\system\Database\SQLite3\Connection.php(116): SQLite3->query('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLite3\Connection->execute('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\uas1\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\uas1\app\Models\Mdata.php(25): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 C:\xampp\htdocs\uas1\app\Controllers\Basis.php(8): App\Models\Mdata->getTotalBuku()
+#6 C:\xampp\htdocs\uas1\system\CodeIgniter.php(832): App\Controllers\Basis->index()
+#7 C:\xampp\htdocs\uas1\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas1\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas1\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-07-07 22:55:43 --> Undefined variable $dtgrafik
+#0 C:\xampp\htdocs\uas-semester2\app\Views\beranda.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 163)
+#1 C:\xampp\htdocs\uas-semester2\app\Views\home.php(70): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\uas-semester2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\uas-semester2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\uas-semester2\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#5 C:\xampp\htdocs\uas-semester2\app\Controllers\Basis.php(11): view('home', Array)
+#6 C:\xampp\htdocs\uas-semester2\system\CodeIgniter.php(832): App\Controllers\Basis->index()
+#7 C:\xampp\htdocs\uas-semester2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Basis))
+#8 C:\xampp\htdocs\uas-semester2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uas-semester2\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
